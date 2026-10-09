@@ -1,136 +1,149 @@
-# TrackingOps
-
 <p align="center">
-  <strong>Operational clarity for the systems that matter.</strong><br />
-  A desktop command center for observing, securing, and acting on Windows infrastructure.
+  <img src="./assets/overview.png" alt="TrackingOps System Overview" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Desktop-Windows%2010%20%2F%2011-1f6feb?style=for-the-badge&logo=windows&logoColor=white" alt="Windows 10 and 11" />
-  <img src="https://img.shields.io/badge/Status-Private%20preview-6f42c1?style=for-the-badge" alt="Private preview" />
-  <img src="https://img.shields.io/badge/Source-Proprietary-30363d?style=for-the-badge" alt="Proprietary source" />
+  <img src="https://img.shields.io/badge/Windows-Desktop%20application-0078D4?style=flat-square&logo=windows&logoColor=white" alt="Windows desktop application" />
+  <img src="https://img.shields.io/badge/Access-Private%20preview-6B5CFF?style=flat-square" alt="Private preview" />
+  <img src="https://img.shields.io/badge/Source-Proprietary-1F2937?style=flat-square" alt="Proprietary source" />
 </p>
 
-> **A private-source product showcase.** This repository intentionally contains no application source code, credentials, customer data, or internal infrastructure configuration.
+<h1 align="center">TrackingOps</h1>
+
+<p align="center">
+  <strong>See the system. Understand the signal. Act with intent.</strong><br />
+  A focused Windows command center for local infrastructure, containers, and security operations.
+</p>
+
+<p align="center">
+  <a href="#the-product">Explore the product</a> ·
+  <a href="#a-single-workspace-for-operations">See the workspaces</a> ·
+  <a href="#availability">Request access</a>
+</p>
+
+> [!IMPORTANT]
+> **This is the public product showcase for a private-source application.** No production source code, credentials, deployment configuration, customer data, or private infrastructure details are included here.
 
 ---
 
-## The operating picture, not another dashboard
+## The product
 
-Modern operations teams rarely lack signals; they lack a trustworthy way to connect them. **TrackingOps** brings the health, security posture, and operating context of a Windows host into one focused desktop workspace.
+Operations teams do not need more disconnected charts. They need a coherent picture of what is happening, why it matters, and which action is appropriate next.
 
-It is built for the moments where context matters most: a disk approaching capacity, a container that has stopped responding, a suspicious persistence mechanism, or an incident that needs an immediate, evidence-based action.
+**TrackingOps** unifies local system telemetry, Docker workloads, operational checks, and security context in a purpose-built desktop experience. It is designed to keep high-value information close to the operator—without turning every screen into a wall of data.
 
-| Observe | Investigate | Act |
-| :--- | :--- | :--- |
-| Live CPU, memory, disk, GPU, process and network telemetry | Security events, software inventory, SSL posture and threat scans | Guarded Docker operations, runbooks, alert acknowledgement and remediation workflows |
+| Observe | Understand | Respond |
+| :-- | :-- | :-- |
+| Surface CPU, memory, GPU, storage, network and process context in real time. | Bring operational and security signals into the same decision surface. | Use deliberate, operator-controlled workflows for the next step. |
 
-## What TrackingOps does
+### System intelligence at a glance
 
-### Live infrastructure intelligence
+The Overview is the starting point: a live operational readout of the Windows host, from resource pressure to overall system condition. It is designed for fast orientation before a deeper investigation.
 
-- Continuous host telemetry for compute, memory, disks, network interfaces, processes, GPU and power context.
-- Docker visibility covering containers, images, networks, volumes, logs and lifecycle status.
-- Wi-Fi, LAN/WAN, listening-port and protocol-level network views.
-- Host registration and compact metric history for fleet-level context.
+<p align="center">
+  <img src="./assets/overview.png" alt="TrackingOps System Overview with live host telemetry and system health" width="100%" />
+</p>
 
-### Security operations built into the workflow
+## A single workspace for operations
 
-- On-demand threat scanning across processes, network activity, persistence mechanisms and user-selected folders.
-- Windows Security event-log visibility, security baseline checks, backup status, installed-software inventory and certificate checks.
-- Human-confirmed remediation for sensitive actions; no destructive response runs silently in the background.
-- Organization-scoped API access and audit-ready activity records.
+### Containers, in context
 
-### Operations that close the loop
+The Docker workspace brings containers, resource use, networking, volumes and images together. Operators can move from a workload’s current state to its operational context without hopping between tools.
 
-- Alert rules, severity-aware alert handling and incident context.
-- Runbooks with a deliberately constrained first automation action: restarting a named Docker container on the enrolled host.
-- Synthetic HTTP, TCP and DNS checks from the local machine.
-- Update awareness, package-update checks and a built-in application update workflow with SHA-256 verification.
+<p align="center">
+  <img src="./assets/docker.png" alt="TrackingOps Docker Containers workspace" width="100%" />
+</p>
 
-### AI where it is useful
+| What the workspace brings together | Why it matters |
+| --- | --- |
+| Container state and resource trends | Identify pressure and unhealthy workloads quickly. |
+| Images, networks and volumes | Understand the moving parts behind a deployment. |
+| Logs and lifecycle controls | Investigate and act from the same operating surface. |
 
-- An operational copilot for contextual questions over recorded telemetry.
-- Threat-triage and power-calibration workflows designed to support an operator, not replace one.
-- Configurable AI provider settings at the platform-administration layer.
+### Security that belongs in the operational flow
 
-## Architecture at a glance
+Security signals are most useful when they arrive with context. The Security Operations Center organizes posture checks, event activity, scan results and hardening signals in one place, so an operator can assess priority before taking action.
+
+<p align="center">
+  <img src="./assets/security.png" alt="TrackingOps Security Operations Center" width="100%" />
+</p>
+
+| Security workspace | Designed to support |
+| --- | --- |
+| Baseline and posture checks | A clearer view of host hardening and configuration drift. |
+| Security events and activity | Faster investigation with operational context alongside the signal. |
+| Guided scan and response flows | Intentional, human-reviewed action—not silent destructive automation. |
+
+## Signal integrity
+
+Trust comes from being clear about the source of each signal.
+
+- **Live local telemetry** covers system resources and the local machine context exposed by the desktop application.
+- **Operational workspaces** organize infrastructure and security workflows around the systems the operator manages.
+- **Demo or illustrative insight panels** are explicitly identified inside the product when a view is meant to demonstrate a workflow rather than report a live production event.
+
+The screenshots above are authentic views of the application. They have been cropped to remove local user and device-identifying information.
+
+## Built for deliberate control
+
+TrackingOps is designed around a simple principle: privileged local actions deserve a visible, intentional operator decision.
+
+| Capability | Operator experience |
+| --- | --- |
+| Host diagnostics | Inspect resources, processes, disks, network context and system health from a unified desktop view. |
+| Docker operations | Review workloads and use lifecycle controls only when the operator chooses to act. |
+| Security workflows | Review checks and scan context before moving into sensitive remediation paths. |
+| Operational history | Keep relevant activity close to the investigation rather than scattered across disconnected tools. |
+
+## Product foundation
 
 ```mermaid
 flowchart LR
-  User[Operator] --> Desktop[TrackingOps Desktop]
-  Desktop --> UI[React + Vite workspace]
-  UI --> Bridge[Typed, isolated IPC bridge]
-  Bridge --> Agent[Electron host agent]
-  Agent --> OS[Windows, Docker & local services]
-  UI --> API[Hono API]
-  API --> Auth[Clerk authentication]
-  API --> Data[Neon PostgreSQL via Drizzle]
-  API --> Intelligence[Optional intelligence services]
+  Operator[Operator] --> Desktop[TrackingOps Desktop]
+  Desktop --> Workspace[React workspace]
+  Workspace --> Bridge[Isolated desktop bridge]
+  Bridge --> Host[Windows host & Docker]
+  Workspace --> Control[Authenticated control plane]
+  Control --> Data[Operational data]
 ```
 
-| Layer | Responsibility |
-| --- | --- |
-| **Desktop experience** | React interface designed around operational workflows rather than raw charts. |
-| **Local host agent** | Electron main process gathers host state and performs explicitly requested local actions. |
-| **Secure bridge** | A narrow, typed preload API separates the renderer from native capabilities. |
-| **Control plane** | Hono API persists organization-scoped data, alerts, audit events, rules and runbook executions. |
-| **Identity & data** | Clerk provides authentication and organization context; Neon + Drizzle provide the application data layer. |
-
-## Designed with operational safeguards
-
-TrackingOps treats local control as a privilege, not a convenience.
-
-- Renderer access to native features is exposed through a restricted IPC surface.
-- The desktop window uses context isolation and disables Node integration in the UI.
-- Actions such as process termination, persistence remediation and file deletion require an explicit operator confirmation in the product flow.
-- API routes derive tenant scope from the authenticated organization rather than trusting a client-supplied organization identifier.
-- Downloaded desktop updates are checked against their expected SHA-256 value before installation.
-
-Security is an ongoing practice. If you believe you have found a vulnerability, please do **not** open a public issue; use the contact channel below.
+The private product is built with a modern desktop and web stack, including **Electron**, **React**, **TypeScript**, **Vite**, **Hono**, **Clerk**, **Neon PostgreSQL**, **Drizzle ORM**, and Docker integrations.
 
 ## Availability
 
-TrackingOps is proprietary software and is currently distributed through controlled channels.
+TrackingOps is proprietary software, shared through controlled channels.
 
 | Item | Availability |
 | --- | --- |
 | Windows desktop application | Private preview / controlled distribution |
-| Source code | Not publicly available |
-| Evaluations & product discussions | Available on request |
-| Security reports | Private disclosure only |
+| Public repository | Product presentation and release context only |
+| Application source code | Not publicly available |
+| Evaluations and product discussions | Contact the repository owner |
+| Security reports | Please use a private channel; do not open a public issue with sensitive details |
 
-## Technology foundation
-
-`Electron` · `React` · `TypeScript` · `Vite` · `Hono` · `Clerk` · `Neon PostgreSQL` · `Drizzle ORM` · `Docker Engine API`
-
-## Frequently asked questions
+## FAQ
 
 <details>
-<summary><strong>Why is the source code not in this repository?</strong></summary>
+<summary><strong>Why is the source code not included?</strong></summary>
 
-TrackingOps includes proprietary desktop, operational and security workflows. This repository exists to provide a transparent product overview while keeping source code, secrets, deployment configuration and customer-facing operational details private.
+TrackingOps contains proprietary desktop, infrastructure and security workflows. This repository is intentionally limited to the public product story and visual product documentation.
 </details>
 
 <details>
 <summary><strong>Does TrackingOps replace an observability platform?</strong></summary>
 
-No. It is a focused desktop operations layer: it combines immediate local visibility, guided investigation and controlled actions on the operator's machine. It can complement broader observability and incident-management systems.
+No. It is a focused operator experience for the local Windows environment and its managed workflows. It can complement broader observability, security and incident-management systems.
 </details>
 
 <details>
 <summary><strong>Which operating systems are supported?</strong></summary>
 
-The current desktop experience is designed for Windows 10 and Windows 11. The product uses native Windows telemetry and security integrations.
+The current desktop product is designed for Windows 10 and Windows 11.
 </details>
-
-## Contact
-
-For evaluation requests, partnership conversations or responsible security disclosure, contact the TrackingOps team through the organisation that shared this repository with you.
 
 ---
 
 <p align="center">
   <strong>TrackingOps</strong><br />
-  Observe clearly. Respond deliberately.
+  A clearer way to operate.
 </p>
