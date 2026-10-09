@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720" role="img" aria-labelledby="title desc">
+  <title id="title">TrackingOps — Operational intelligence for Windows</title>
+  <desc id="desc">A dark premium banner showing the TrackingOps identity, live system signals, Docker, security, and AI operations.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06070a"/>
+      <stop offset="0.55" stop-color="#0b0d13"/>
+      <stop offset="1" stop-color="#07080b"/>
+    </linearGradient>
+    <radialGradient id="violet" cx="0" cy="0" r="1" gradientTransform="translate(410 190) rotate(36) scale(610 430)">
+      <stop stop-color="#7457ff" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#7457ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cyan" cx="0" cy="0" r="1" gradientTransform="translate(1320 600) rotate(-148) scale(570 360)">
+      <stop stop-color="#34d8ff" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#34d8ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#7964ff"/>
+      <stop offset=".52" stop-color="#39cbff"/>
+      <stop offset="1" stop-color="#61edac"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ffffff" stop-opacity=".11"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".035"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#fff" stroke-opacity=".035"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="720" rx="38" fill="url(#bg)"/>
+  <rect width="1600" height="720" rx="38" fill="url(#violet)"/>
+  <rect width="1600" height="720" rx="38" fill="url(#cyan)"/>
+  <rect width="1600" height="720" rx="38" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1598" height="718" rx="37" fill="none" stroke="#fff" stroke-opacity=".11"/>
+
+  <g transform="translate(92 76)">
+    <rect width="58" height="58" rx="17" fill="#fff" fill-opacity=".08" stroke="#fff" stroke-opacity=".14"/>
+    <path d="M13 31h9l5-14 7 29 6-20 4 5h5" fill="none" stroke="url(#signal)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="78" y="23" fill="#fff" font-family="Segoe UI Variable Display, Aptos Display, system-ui, sans-serif" font-size="24" font-weight="680" letter-spacing="3">TRACKINGOPS</text>
+    <text x="79" y="47" fill="#9ca3b4" font-family="Segoe UI Variable Text, Aptos, system-ui, sans-serif" font-size="12" font-weight="600" letter-spacing="4">SYSTEM INTELLIGENCE</text>
+  </g>
+
+  <g transform="translate(92 232)">
+    <text fill="#fff" font-family="Segoe UI Variable Display, Aptos Display, system-ui, sans-serif" font-size="70" font-weight="680" letter-spacing="-2.7">
+      <tspan x="0" y="0">See the system.</tspan>
+      <tspan x="0" y="82" fill="#bdc2cf">Understand the signal.</tspan>
+      <tspan x="0" y="164">Act with intent.</tspan>
+    </text>
+    <text x="2" y="220" fill="#9fa6b7" font-family="Segoe UI Variable Text, Aptos, system-ui, sans-serif" font-size="21" letter-spacing=".25">A Windows command center for infrastructure, security, containers, and AI-assisted operations.</text>
+  </g>
+
+  <g transform="translate(92 586)" font-family="Segoe UI Variable Text, Aptos, system-ui, sans-serif">
+    <rect width="190" height="50" rx="25" fill="#fff"/>
+    <text x="25" y="31" fill="#08090c" font-size="14" font-weight="700" letter-spacing=".5">PRIVATE PREVIEW</text>
+    <circle cx="164" cy="25" r="13" fill="#0b0d12"/>
+    <path d="m159 25 4 4 7-8" fill="none" stroke="#66e6b2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="216" y="31" fill="#a9afbd" font-size="13" font-weight="600" letter-spacing="1.5">WINDOWS 10 / 11</text>
+  </g>
+
+  <g transform="translate(1046 70)">
+    <rect width="460" height="570" rx="30" fill="#07090d" fill-opacity=".72" stroke="#fff" stroke-opacity=".12"/>
+    <rect x="9" y="9" width="442" height="552" rx="23" fill="url(#panel)" stroke="#fff" stroke-opacity=".07"/>
+    <g transform="translate(34 33)" font-family="Segoe UI Variable Text, Aptos, system-ui, sans-serif">
+      <circle cx="7" cy="7" r="4" fill="#65e8ad" filter="url(#glow)"/>
+      <text x="21" y="11" fill="#dfe3ec" font-size="12" font-weight="700" letter-spacing="2">LIVE MACHINE DATA</text>
+      <text x="0" y="62" fill="#fff" font-size="27" font-weight="700">Operational picture</text>
+      <text x="0" y="88" fill="#9299aa" font-size="14">One surface. Every critical signal.</text>
+
+      <g transform="translate(0 122)">
+        <rect width="184" height="102" rx="18" fill="#090b10" stroke="#fff" stroke-opacity=".1"/>
+        <text x="18" y="26" fill="#858d9f" font-size="10" font-weight="700" letter-spacing="2">CPU</text>
+        <text x="18" y="65" fill="#fff" font-size="30" font-weight="700">42.8%</text>
+        <path d="M18 82c25-10 42 5 63-3s30-20 51-10 30-1 34-10" fill="none" stroke="#7165ff" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(202 122)">
+        <rect width="184" height="102" rx="18" fill="#090b10" stroke="#fff" stroke-opacity=".1"/>
+        <text x="18" y="26" fill="#858d9f" font-size="10" font-weight="700" letter-spacing="2">MEMORY</text>
+        <text x="18" y="65" fill="#fff" font-size="30" font-weight="700">23.1 GB</text>
+        <rect x="18" y="80" width="146" height="4" rx="2" fill="#fff" fill-opacity=".08"/>
+        <rect x="18" y="80" width="106" height="4" rx="2" fill="#34d8ff"/>
+      </g>
+
+      <g transform="translate(0 242)">
+        <rect width="386" height="92" rx="18" fill="#090b10" stroke="#fff" stroke-opacity=".1"/>
+        <circle cx="29" cy="29" r="9" fill="#61edac" fill-opacity=".15"/>
+        <circle cx="29" cy="29" r="4" fill="#61edac"/>
+        <text x="50" y="27" fill="#f0f2f7" font-size="14" font-weight="700">Security baseline</text>
+        <text x="50" y="47" fill="#858d9f" font-size="11">Posture checks and investigation context</text>
+        <text x="309" y="35" fill="#61edac" font-size="12" font-weight="700">READY</text>
+        <path d="M18 70H368" stroke="#fff" stroke-opacity=".06"/>
+        <text x="18" y="83" fill="#788092" font-size="10" letter-spacing="1.2">FIREWALL · UPDATES · DISK · NETWORK</text>
+      </g>
+
+      <g transform="translate(0 352)">
+        <rect width="386" height="132" rx="18" fill="#090b10" stroke="#fff" stroke-opacity=".1"/>
+        <rect x="18" y="18" width="40" height="40" rx="12" fill="#7864ff" fill-opacity=".18"/>
+        <path d="M30 39h16M38 31v16" stroke="#9c8cff" stroke-width="2" stroke-linecap="round"/>
+        <text x="72" y="34" fill="#fff" font-size="14" font-weight="700">AI KILLING</text>
+        <text x="72" y="53" fill="#858d9f" font-size="11">Grounded operational copilot</text>
+        <rect x="18" y="78" width="350" height="36" rx="12" fill="#fff" fill-opacity=".045"/>
+        <text x="33" y="101" fill="#adb3c1" font-size="11">/scan  @hosts  @alerts  @runbooks</text>
+      </g>
+    </g>
+  </g>
+
+  <g opacity=".55">
+    <circle cx="964" cy="128" r="3" fill="#53e6bd"/>
+    <circle cx="1000" cy="190" r="2" fill="#7964ff"/>
+    <path d="M820 92c86 26 114 92 155 163 31 54 47 93 71 118" fill="none" stroke="url(#signal)" stroke-opacity=".32" stroke-width="1.5" stroke-dasharray="4 10"/>
+  </g>
+</svg>
