@@ -18,7 +18,8 @@
 <p align="center">
   <a href="#the-product">Explore the product</a> ·
   <a href="#a-single-workspace-for-operations">See the workspaces</a> ·
-  <a href="#availability">Request access</a>
+  <a href="#ai-that-stays-grounded-in-the-operation">Explore AI</a> ·
+  <a href="https://trackingops.vercel.app">Install TrackingOps</a>
 </p>
 
 > [!IMPORTANT]
@@ -84,6 +85,35 @@ Trust comes from being clear about the source of each signal.
 
 The screenshots above are authentic views of the application. They have been cropped to remove local user and device-identifying information.
 
+## AI that stays grounded in the operation
+
+TrackingOps includes **AI KILLING**, an operational copilot designed to help an operator reason over the context they choose to provide—not a generic chatbot detached from the system.
+
+It can work from collected metric history, recent alerts and explicit on-demand investigation context to help answer operational questions such as *“What changed?”*, *“Which process is contributing to the pressure?”*, or *“What should I verify next?”*.
+
+| AI KILLING capabilities | How it is used |
+| --- | --- |
+| Contextual operational chat | Ask questions about an enrolled host’s collected metrics and recent alerts. |
+| Conversation history | Keep an investigation thread, return to it later, and export the discussion when needed. |
+| On-demand investigation tools | Bring fresh diagnostic or security context into a conversation only when the operator requests it. |
+| Mention-based context | Select the relevant operational surface instead of expecting the assistant to guess the scope. |
+| Configurable AI control plane | Configure the model, temperature and system guidance at the administration layer. |
+
+The product deliberately distinguishes AI-backed analysis from illustrative dashboard content. Where a screen is a demo, the UI says so. Where the copilot makes a claim about host activity, it is designed to ground that answer in the collected context supplied to it.
+
+## More than monitoring
+
+TrackingOps is built as an operator’s workspace, not merely a visual dashboard.
+
+| Domain | Included operational surfaces |
+| --- | --- |
+| **Host & performance** | CPU, GPU, memory, storage, power, process and local history views. |
+| **Network** | Protocol visibility, WAN/LAN context, Wi-Fi stations and connection-oriented investigation. |
+| **Applications & data** | Web and local applications, APIs, databases and Docker workloads. |
+| **Observability** | Incident management, distributed tracing, synthetic monitoring, capacity and forecasting views. |
+| **Security & compliance** | Security operations, threats, audit/compliance and guided scanning workflows. |
+| **Automation** | Alerting, runbooks, deliberate response flows and activity context. |
+
 ## Built for deliberate control
 
 TrackingOps is designed around a simple principle: privileged local actions deserve a visible, intentional operator decision.
@@ -112,6 +142,10 @@ The private product is built with a modern desktop and web stack, including **El
 ## Availability
 
 TrackingOps is proprietary software, shared through controlled channels.
+
+<p align="center">
+  <a href="https://trackingops.vercel.app"><strong>Install or discover TrackingOps →</strong></a>
+</p>
 
 | Item | Availability |
 | --- | --- |
