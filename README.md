@@ -17,10 +17,12 @@
 
 <p align="center">
   <a href="https://trackingops.vercel.app"><strong>Download</strong></a> ·
+  <a href="#-the-operating-loop">Operating loop</a> ·
   <a href="#-product-tour">Product tour</a> ·
   <a href="#-ai-killing--operational-intelligence">AI KILLING</a> ·
   <a href="#-capability-map">Capabilities</a> ·
-  <a href="#-architecture--trust">Architecture</a>
+  <a href="#-architecture--trust">Architecture</a> ·
+  <a href="./SUPPORT.md">Support</a>
 </p>
 
 > [!IMPORTANT]
@@ -41,6 +43,18 @@ TrackingOps connects the local Windows host, Docker workloads, network activity,
 <p align="center">
   <sub>7 operational domains &nbsp;·&nbsp; 20+ focused workspaces &nbsp;·&nbsp; 14 live AI investigation tools &nbsp;·&nbsp; 1 desktop control plane</sub>
 </p>
+
+---
+
+## ✦ The operating loop
+
+TrackingOps is organized around the way operational decisions actually happen: first establish reality, then build context, then choose a controlled response.
+
+<p align="center">
+  <img src="./assets/operating-loop.svg" alt="The TrackingOps operating loop: observe, understand and respond" width="100%" />
+</p>
+
+This loop is repeated across the product. A CPU spike can lead into process inspection. An exposed service can lead into port and connection context. A security finding can be handed to AI KILLING together with a fresh scan—without hiding the source of the evidence.
 
 ---
 
@@ -171,6 +185,51 @@ Keep product, host and platform configuration accessible through a dedicated adm
 
 ---
 
+## ✦ Built for the people carrying the pager
+
+### System and infrastructure engineers
+
+Get from resource pressure to the process, disk, connection or workload behind it while keeping the current host context visible.
+
+### Security operators
+
+Bring host posture, active connections, persistence checks, installed-software vulnerabilities and event context into the same investigation surface.
+
+### Platform and DevOps teams
+
+Connect Docker state, service checks, incidents, tracing, forecasts, alerts and runbooks without turning the desktop into another disconnected dashboard wall.
+
+### Technical leaders
+
+Use a consistent operational model across system health, risk, incidents and response—while maintaining clear boundaries between live evidence and illustrative product views.
+
+---
+
+## ✦ Moments where TrackingOps earns its place
+
+| Situation | TrackingOps path | Operational outcome |
+| --- | --- | --- |
+| **The machine suddenly feels slow** | Overview → Compute → Processes → AI KILLING | Identify pressure, inspect contributors and preserve the investigation context. |
+| **A container stops behaving normally** | Docker → logs/resources → connections → runbook | Move from workload state to supporting evidence and a deliberate lifecycle action. |
+| **A listening port is unexpected** | Network & Protocols → process ownership → `/ports` or `/connections` | Verify the owning process and surrounding network activity before responding. |
+| **A host may be exposed** | Security Operations → baseline → `/vulns` → `/scan` | Combine posture, software exposure and fresh host findings in one investigation. |
+| **Capacity risk is emerging** | Local History → Capacity & Forecasting → alerts | Translate a trend into an earlier operational decision. |
+| **A handoff needs evidence** | Incident context → AI thread → Markdown export | Keep the reasoning, evidence and next checks together for the next operator. |
+
+---
+
+## ✦ Why desktop-first
+
+Some of the most valuable operational signals live closest to the machine: active processes, ports, local adapters, installed software, security state, disks and Docker. A desktop control plane can gather that context directly while still connecting it to authenticated organization-level history and workflows.
+
+TrackingOps uses that position to combine three qualities that are often separated:
+
+1. **Immediate local truth** — see the host from the host.
+2. **Persistent operational context** — retain metrics, alerts, conversations and activity beyond the current moment.
+3. **Explicit local control** — keep sensitive actions visible and intentional.
+
+---
+
 ## ✦ Designed around operator intent
 
 TrackingOps treats local control as a privilege. Sensitive flows are designed to keep the operator aware of what is about to happen and why.
@@ -244,7 +303,8 @@ The screenshots in this repository are authentic TrackingOps product views. They
 | Official product experience | [trackingops.vercel.app](https://trackingops.vercel.app) |
 | Public repository | Product presentation and release context only |
 | Application source code | Proprietary and not publicly distributed |
-| Security reports | Use a private channel; never disclose sensitive findings in a public issue |
+| Product support | See [SUPPORT.md](./SUPPORT.md) |
+| Security reports | Follow [SECURITY.md](./SECURITY.md) and use a private channel |
 
 ---
 
@@ -282,4 +342,11 @@ The current desktop product is designed for Windows 10 and Windows 11. Some func
 
 <p align="center">
   <sub>Private-source product showcase · © 2026 TrackingOps</sub>
+</p>
+
+<p align="center">
+  <a href="https://trackingops.vercel.app">Product</a> ·
+  <a href="./SUPPORT.md">Support</a> ·
+  <a href="./SECURITY.md">Security</a> ·
+  <a href="./LICENSE">License</a>
 </p>
