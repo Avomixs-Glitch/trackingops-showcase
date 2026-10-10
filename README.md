@@ -259,7 +259,7 @@ TrackingOps treats local control as a privilege. Sensitive flows are designed to
 
 <p align="center">
   <a href="./docs/architecture/trackingops-system-architecture.excalidraw">
-    <img src="./assets/architecture-blueprint.svg" alt="TrackingOps system architecture blueprint" width="100%" />
+    <img src="./assets/system-architecture.svg" alt="TrackingOps system architecture blueprint" width="100%" />
   </a>
 </p>
 
