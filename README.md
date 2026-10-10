@@ -22,6 +22,7 @@
   <a href="#-ai-killing--operational-intelligence">AI KILLING</a> ·
   <a href="#-capability-map">Capabilities</a> ·
   <a href="#-architecture--trust">Architecture</a> ·
+  <a href="./docs/architecture/">Blueprints</a> ·
   <a href="./SUPPORT.md">Support</a>
 </p>
 
@@ -109,6 +110,16 @@ Security is presented as operating context—not as a detached report. TrackingO
 **AI KILLING** is the embedded operations copilot for TrackingOps. It is designed to reason over the context the operator selects: collected metric history, recent alerts, fleet context, scan results and fresh tool output.
 
 It is not presented as an all-knowing chatbot. The interface makes the source of context visible and lets the operator decide when a live investigation tool should run.
+
+<p align="center">
+  <a href="./docs/architecture/ai-investigation-flow.excalidraw">
+    <img src="./assets/ai-investigation-flow.svg" alt="TrackingOps investigation flow from signal to controlled response" width="100%" />
+  </a>
+</p>
+
+<p align="center">
+  <sub>Click the blueprint to open the editable Excalidraw source.</sub>
+</p>
 
 ### Ask with context
 
@@ -246,17 +257,15 @@ TrackingOps treats local control as a privilege. Sensitive flows are designed to
 
 ## ✦ Architecture & trust
 
-```mermaid
-flowchart LR
-  O[Operator] --> D[TrackingOps Desktop]
-  D --> W[React Workspace]
-  W --> B[Isolated Desktop Bridge]
-  B --> H[Windows Host]
-  B --> X[Docker & Local Services]
-  W --> C[Authenticated Control Plane]
-  C --> P[Operational Data]
-  C --> A[AI & Intelligence Services]
-```
+<p align="center">
+  <a href="./docs/architecture/trackingops-system-architecture.excalidraw">
+    <img src="./assets/architecture-blueprint.svg" alt="TrackingOps system architecture blueprint" width="100%" />
+  </a>
+</p>
+
+<p align="center">
+  <sub>Architecture is published as an editable Excalidraw blueprint—without exposing proprietary application code.</sub>
+</p>
 
 | Layer | Role |
 | --- | --- |
@@ -269,6 +278,15 @@ flowchart LR
 **Technology foundation**
 
 `Electron` · `React` · `TypeScript` · `Vite` · `Hono` · `Clerk` · `Neon PostgreSQL` · `Drizzle ORM` · `Docker Engine API`
+
+### Open design artifacts
+
+| Blueprint | Purpose | Source |
+| --- | --- | --- |
+| **System architecture** | Shows how local telemetry, the isolated desktop bridge, authenticated services, operational data and AI intelligence connect. | [Open `.excalidraw`](./docs/architecture/trackingops-system-architecture.excalidraw) |
+| **AI investigation flow** | Shows how a raw signal becomes grounded evidence, an operator decision and a controlled response. | [Open `.excalidraw`](./docs/architecture/ai-investigation-flow.excalidraw) |
+
+Both diagrams are generated from a versioned source script so the public architecture stays consistent as the product evolves.
 
 ---
 
